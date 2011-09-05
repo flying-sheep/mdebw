@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<prefwindow id="mdebw-pref-window" title="Mods.de Bookmark Watcher" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<prefpane id="mdebw-pref-pane" label="Stock Settings">
+		<preferences>
+			<preference id="delay" name="extensions.mdebw.delay" type="int"/>
+		</preferences>
+		<scale id="delaybox" preference="delay"
+			label="delay"
+			min="5" max="120" increment="5"
+		/><!--&delay.label;-->
+	</prefpane>
+</prefwindow>
