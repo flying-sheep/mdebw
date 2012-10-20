@@ -4,6 +4,8 @@ var Ci = Components.interfaces;
 Components.utils.import("resource://gre/modules/Services.jsm");
 Services.ss = Components.classes["@mozilla.org/content/style-sheet-service;1"].getService(Ci.nsIStyleSheetService);
 
+var resourceURI = "resource://mdebw/resources";
+
 function getKeys(obj) {
 	let keys = [];
 	for(let key in obj)
@@ -121,7 +123,7 @@ function specificIcon(title) {
 	
 	for (let i=0; i<icons.length; i++)
 		if (title.indexOf(icons[i]) != -1)
-			return "resource://mdebw/resources/threadicons/" + icons[i] + ".png";
+			return resourceURI + "/threadicons/" + icons[i] + ".png";
 	
 	return null;
 }
@@ -326,7 +328,7 @@ function startup(aData, aReason) {
 	});
 	
 	//add stylesheet
-	let uri = Services.io.newURI("resource://mdebw/resources/stylesheet.css", null, null);
+	let uri = Services.io.newURI(resourceURI + "/stylesheet.css", null, null);
 	if(!Services.ss.sheetRegistered(uri, Services.ss.USER_SHEET))
 		Services.ss.loadAndRegisterSheet(uri, Services.ss.USER_SHEET);
 }
@@ -348,7 +350,7 @@ function shutdown(aData, aReason) {
 	}
 	
 	//remove stylesheet
-	let uri = Services.io.newURI("resource://mdebw/resources/stylesheet.css", null, null);
+	let uri = Services.io.newURI(resourceURI + "/stylesheet.css", null, null);
 	if(Services.ss.sheetRegistered(uri, Services.ss.USER_SHEET))
 		Services.ss.unregisterSheet(uri, Services.ss.USER_SHEET);
 }
