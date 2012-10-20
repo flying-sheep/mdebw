@@ -1,7 +1,5 @@
-#!/usr/bin/env python2.7
-# -*- coding: utf-8 -*-
+#!/usr/bin/env python3
 
-from __future__ import print_function
 import os, sys, re
 from zipfile import ZipFile
 from fnmatch import fnmatchcase
