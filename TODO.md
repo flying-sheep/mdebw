@@ -4,7 +4,6 @@
 		* mittelklick: alle ungelesenen öffnen, refresh, forumsstartseite, oder einstellungsfenster/tab
 		* rechtsklick: einstellungsmenü oder bookmarkliste oder toolbarmenü
 		* pfeil: einstellungsmenü oder bookmarkliste
-	*	refreshzeit (textbox, „nicht refreshen“ nicht vergessen)
 	*	liste bei mittelklicks geöffnet halten. (noautohide="true")
 	*	refreshanimation (throbber / drehender mata)
 3.	„-“ auch bei fehlgeschlagenen updates
