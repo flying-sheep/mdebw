@@ -1,0 +1,62 @@
+{
+	"id": "mdebw@red-sheep.de",
+	"name": "mdebw",
+	"fullName": "Mods.de Bookmark Watcher 2",
+	"description": "Überprüft die Lesezeichen im Mods.de-Forum und ermöglicht es, diese einzeln oder gleichzeitig aufzurufen.",
+	"author": "flying sheep",
+	"icon": "data/icon.png",
+	"license": "GPLv2",
+	"version": "0.5",
+	"dependencies": [
+		"vold-utils"
+	],
+	"preferences": [{
+		"name": "delay",
+		"title": "Intervall",
+		"description": "Wartezeit zwischen zwei automatischen Neuladevorgängen (in Sekunden)",
+		"type": "integer",
+		"value": 120
+	}, {
+		"name": "showNumber",
+		"title": "Zeige Beitragsnummer",
+		"description": "Anzeigen der Anzahl neuer Beiträge",
+		"type": "bool",
+		"value": true
+	}, {
+		"name": "notify",
+		"title": "Zeige Benachrichtigungen",
+		"description": "Benachrichtigungen bei Änderungen der Anzahl ungelesener Posts",
+		"type": "bool",
+		"value": false
+	}, {
+		"name": "actionLMB",
+		"title": "Linke Maustaste",
+		"type": "menulist",
+		"value": "open",
+		"options": [
+			{ "value": "open",     "label": "Alle ungelesenen in Tabs öffnen" },
+			{ "value": "refresh",  "label": "Auf neue Beiträge prüfen" },
+			{ "value": "settings", "label": "Diese Einstellungen öffnen" },
+			{ "value": "noop",     "label": "Nichts" }]
+	}, {
+		"name": "actionMMB",
+		"title": "Mittlere Maustaste",
+		"type": "menulist",
+		"value": "refresh",
+		"options": [
+			{ "value": "open",     "label": "Alle ungelesenen in Tabs öffnen" },
+			{ "value": "refresh",  "label": "Auf neue Beiträge prüfen" },
+			{ "value": "settings", "label": "Diese Einstellungen öffnen" },
+			{ "value": "noop",     "label": "Nichts" }]
+	}, {
+		"name": "actionRMB",
+		"title": "Rechte Maustaste",
+		"type": "menulist",
+		"value": "settings",
+		"options": [
+			{ "value": "open",     "label": "Alle ungelesenen in Tabs öffnen" },
+			{ "value": "refresh",  "label": "Auf neue Beiträge prüfen" },
+			{ "value": "settings", "label": "Diese Einstellungen öffnen" },
+			{ "value": "noop",     "label": "Standard Toolbar-Kontextmenü" }]
+	}]
+}

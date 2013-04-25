@@ -1,9 +1,9 @@
 #mdebw-button {
-	list-style-image: url("resource://mdebw/icon.png") !important;
+	list-style-image: url("icon.png") !important;
 }
 
 toolbar[iconsize="small"] #mdebw-button {
-	list-style-image: url("resource://mdebw/icon16.png") !important;
+	list-style-image: url("icon16.png") !important;
 }
 
 /* default-ordnericon */
@@ -17,7 +17,9 @@ toolbar[iconsize="small"] #mdebw-button {
 	-moz-box-orient: horizontal !important;
 	font-family: sans-serif;
 }
-#mdebw-button label {
+
+/*“[label] label” sieht redundant aus, aber der platz wird auch ohne attribut reserviert*/
+#mdebw-button[label] label {
 	display: -moz-box !important;
 	padding-left: 4px;
 }

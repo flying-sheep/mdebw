@@ -1,0 +1,3 @@
+[submodule "packages/vold-utils"]
+	path = packages/vold-utils
+	url = git://github.com/erikvold/vold-utils-jplib.git
