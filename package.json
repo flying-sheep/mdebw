@@ -6,7 +6,7 @@
 	"author": "flying sheep",
 	"icon": "data/icon.png",
 	"license": "GPLv2",
-	"version": "0.5.2",
+	"version": "0.5.3",
 	"dependencies": [
 		"vold-utils"
 	],
@@ -26,6 +26,12 @@
 		"name": "notify",
 		"title": "Zeige Benachrichtigungen",
 		"description": "Benachrichtigungen bei Änderungen der Anzahl ungelesener Posts",
+		"type": "bool",
+		"value": false
+	}, {
+		"name": "dehash",
+		"title": "Entferne Threadhashes",
+		"description": "Entferne #hash aus der URL jedes geladenen threads um Scroll-Sprünge zu vermeiden",
 		"type": "bool",
 		"value": false
 	}, {
