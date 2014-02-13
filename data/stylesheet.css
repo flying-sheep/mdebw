@@ -23,3 +23,8 @@ toolbar[iconsize="small"] #mdebw-button {
 	display: -moz-box !important;
 	padding-left: 4px;
 }
+
+/* fix für firefox 29+ oder so */
+#mdebw-button[label] label ~ label {
+	display: none !important;
+}

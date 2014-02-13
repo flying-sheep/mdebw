@@ -6,7 +6,7 @@
 	"author": "flying sheep",
 	"icon": "data/icon.png",
 	"license": "GPLv2",
-	"version": "0.5.3",
+	"version": "0.5.4",
 	"dependencies": [
 		"vold-utils"
 	],
