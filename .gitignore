@@ -1,2 +1,4 @@
 build
 run.sh
+node_modules/
+

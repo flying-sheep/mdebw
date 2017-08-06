@@ -6,63 +6,114 @@
 	"author": "flying sheep",
 	"icon": "data/icon.png",
 	"license": "GPLv2",
-	"version": "0.5.4",
-	"dependencies": [
-		"vold-utils"
-	],
-	"preferences": [{
-		"name": "delay",
-		"title": "Intervall",
-		"description": "Wartezeit zwischen zwei automatischen Neuladevorgängen (in Sekunden)",
-		"type": "integer",
-		"value": 120
-	}, {
-		"name": "showNumber",
-		"title": "Zeige Beitragsnummer",
-		"description": "Anzeigen der Anzahl neuer Beiträge",
-		"type": "bool",
-		"value": true
-	}, {
-		"name": "notify",
-		"title": "Zeige Benachrichtigungen",
-		"description": "Benachrichtigungen bei Änderungen der Anzahl ungelesener Posts",
-		"type": "bool",
-		"value": false
-	}, {
-		"name": "dehash",
-		"title": "Entferne Threadhashes",
-		"description": "Entferne #hash aus der URL jedes geladenen threads um Scroll-Sprünge zu vermeiden",
-		"type": "bool",
-		"value": false
-	}, {
-		"name": "actionLMB",
-		"title": "Linke Maustaste",
-		"type": "menulist",
-		"value": "open",
-		"options": [
-			{ "value": "open",     "label": "Alle ungelesenen in Tabs öffnen" },
-			{ "value": "refresh",  "label": "Auf neue Beiträge prüfen" },
-			{ "value": "settings", "label": "Diese Einstellungen öffnen" },
-			{ "value": "noop",     "label": "Nichts" }]
-	}, {
-		"name": "actionMMB",
-		"title": "Mittlere Maustaste",
-		"type": "menulist",
-		"value": "refresh",
-		"options": [
-			{ "value": "open",     "label": "Alle ungelesenen in Tabs öffnen" },
-			{ "value": "refresh",  "label": "Auf neue Beiträge prüfen" },
-			{ "value": "settings", "label": "Diese Einstellungen öffnen" },
-			{ "value": "noop",     "label": "Nichts" }]
-	}, {
-		"name": "actionRMB",
-		"title": "Rechte Maustaste",
-		"type": "menulist",
-		"value": "settings",
-		"options": [
-			{ "value": "open",     "label": "Alle ungelesenen in Tabs öffnen" },
-			{ "value": "refresh",  "label": "Auf neue Beiträge prüfen" },
-			{ "value": "settings", "label": "Diese Einstellungen öffnen" },
-			{ "value": "noop",     "label": "Standard Toolbar-Kontextmenü" }]
-	}]
+	"version": "0.5.5",
+	"dependencies": {
+		"vold-utils": "^2.0.0"
+	},
+	"permissions": {
+		"multiprocess": true
+	},
+	"main": "lib/main.js",
+	"preferences": [
+		{
+			"name": "delay",
+			"title": "Intervall",
+			"description": "Wartezeit zwischen zwei automatischen Neuladevorgängen (in Sekunden)",
+			"type": "integer",
+			"value": 120
+		},
+		{
+			"name": "showNumber",
+			"title": "Zeige Beitragsnummer",
+			"description": "Anzeigen der Anzahl neuer Beiträge",
+			"type": "bool",
+			"value": true
+		},
+		{
+			"name": "notify",
+			"title": "Zeige Benachrichtigungen",
+			"description": "Benachrichtigungen bei Änderungen der Anzahl ungelesener Posts",
+			"type": "bool",
+			"value": false
+		},
+		{
+			"name": "dehash",
+			"title": "Entferne Threadhashes",
+			"description": "Entferne #hash aus der URL jedes geladenen threads um Scroll-Sprünge zu vermeiden",
+			"type": "bool",
+			"value": false
+		},
+		{
+			"name": "actionLMB",
+			"title": "Linke Maustaste",
+			"type": "menulist",
+			"value": "open",
+			"options": [
+				{
+					"value": "open",
+					"label": "Alle ungelesenen in Tabs öffnen"
+				},
+				{
+					"value": "refresh",
+					"label": "Auf neue Beiträge prüfen"
+				},
+				{
+					"value": "settings",
+					"label": "Diese Einstellungen öffnen"
+				},
+				{
+					"value": "noop",
+					"label": "Nichts"
+				}
+			]
+		},
+		{
+			"name": "actionMMB",
+			"title": "Mittlere Maustaste",
+			"type": "menulist",
+			"value": "refresh",
+			"options": [
+				{
+					"value": "open",
+					"label": "Alle ungelesenen in Tabs öffnen"
+				},
+				{
+					"value": "refresh",
+					"label": "Auf neue Beiträge prüfen"
+				},
+				{
+					"value": "settings",
+					"label": "Diese Einstellungen öffnen"
+				},
+				{
+					"value": "noop",
+					"label": "Nichts"
+				}
+			]
+		},
+		{
+			"name": "actionRMB",
+			"title": "Rechte Maustaste",
+			"type": "menulist",
+			"value": "settings",
+			"options": [
+				{
+					"value": "open",
+					"label": "Alle ungelesenen in Tabs öffnen"
+				},
+				{
+					"value": "refresh",
+					"label": "Auf neue Beiträge prüfen"
+				},
+				{
+					"value": "settings",
+					"label": "Diese Einstellungen öffnen"
+				},
+				{
+					"value": "noop",
+					"label": "Standard Toolbar-Kontextmenü"
+				}
+			]
+		}
+	]
 }
