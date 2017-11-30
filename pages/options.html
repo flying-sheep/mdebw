@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset=utf-8>
+<script src=../build/options.js></script>
+<style>
+#delay { width: 70px }
+</style>
+
+</head>
+<body>
+
+<!--chrome://browser/content/extension.css-->
+<div class=browser-style>
+	<input id=delay title="Intervall" type=text value="02:00" pattern="[0-9]{2}:[0-9]{2}">
+	<label for=delay>Wartezeit zwischen zwei automatischen Neuladevorgängen (in Minuten)</label>
+</div>
+
+<div class=browser-style>
+	<input id=counter title="Zeige Beitragsnummer" type=checkbox checked class="visually-hidden">
+	<label for=counter>Anzeigen der Anzahl neuer Beiträge</label>
+</div>
+
+<div class=browser-style>
+	<input id=notify title="Zeige Benachrichtigungen" type=checkbox>
+	<label for=notify>Benachrichtigungen bei Änderungen der Anzahl ungelesener Posts</label>
+</div>
+
+<div class=browser-style>
+	<input id=dehash title="Entferne Threadhashes" type=checkbox>
+	<label for=dehash>Entferne #hash aus der URL jedes geladenen threads um Scroll-Sprünge zu vermeiden</label>
+</div>
+
+</body>
+</html>

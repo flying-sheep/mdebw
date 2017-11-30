@@ -1,0 +1,11 @@
+.icon {
+	width: 16px;
+}
+.icon img {
+	vertical-align: middle;
+	position: relative;
+	left: -8px;
+}
+.text-shortcut {
+	margin-left: 16px;
+}

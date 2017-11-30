@@ -1,0 +1,30 @@
+{
+	"manifest_version": 2,
+	"name": "mdebw",
+	"version": "1.0",
+	"description": "Überprüft die Lesezeichen im Mods.de-Forum und ermöglicht es, diese einzeln oder gleichzeitig aufzurufen.",
+	"icons": {
+		"15": "icons/mata15.svg",
+		"24": "icons/mata24.svg"
+	},
+	"background": {
+		"scripts": ["build/background.js"]
+	},
+	"browser_action": {
+		"default_icon": "icons/mata24.svg",
+		"default_title": "mods.de bookmarks",
+		"default_popup": "pages/popup.html",
+		"browser_style": true
+	},
+	"options_ui": {
+		"page": "pages/options.html",
+		"browser_style": true
+	},
+	"permissions": [
+		"*://forum.mods.de/*",
+		"storage",
+		"tabs",
+		"notifications"
+	],
+	"applications": {"gecko": {"id": "mdebw@red-sheep.de"}}
+}
